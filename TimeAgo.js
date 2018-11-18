@@ -41,7 +41,7 @@ export default class TimeAgo extends Component {
     const { time, hideAgo } = this.props;
     return (
       <Text {...this.props}>
-        {moment(time).fromNow(hideAgo).bold().toLocaleUpperCase()}
+        {moment(time).fromNow(hideAgo).toLocaleUpperCase()}
       </Text>
     );
   }
